@@ -1,0 +1,6 @@
+[submodule "modus-theme-vim"]
+	path = pack/packages/opt/modus-theme-vim
+	url = https://github.com/ishan9299/modus-theme-vim
+[submodule "nvim-solarized-lua"]
+	path = pack/packages/opt/nvim-solarized-lua
+	url = https://github.com/ishan9299/nvim-solarized-lua
