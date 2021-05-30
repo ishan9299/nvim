@@ -1,6 +1,8 @@
 local utils = require('custom.utils')
 local nnoremap = utils.nnoremap
 
+nnoremap("<space>", "<nop>")
+
 -- window commands
 nnoremap("<leader>wk", "<cmd>wincmd k<cr>")
 nnoremap("<leader>wj", "<cmd>wincmd j<cr>")
