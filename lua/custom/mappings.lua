@@ -1,7 +1,9 @@
-local utils = require('custom.utils')
-local nnoremap = utils.nnoremap
+local nnoremap = require('custom.utils').nnoremap
 
 nnoremap("<space>", "<nop>")
+
+-- souricing vim/lua files in config
+nnoremap("<leader>so", ":lua require('custom.utils').source_files()<cr>")
 
 -- window commands
 nnoremap("<leader>wk", "<cmd>wincmd k<cr>")

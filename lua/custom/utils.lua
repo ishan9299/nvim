@@ -28,4 +28,14 @@ function M.toggle_line_numbers()
 	end
 end
 
+function M.source_files()
+	local filetype = vim.opt.ft._value
+	local execute = vim.cmd
+	if filetype == 'lua' then
+		execute 'luafile %'
+	elseif filetype == 'vim' then
+		execute 'so %'
+	end
+end
+
 return M
