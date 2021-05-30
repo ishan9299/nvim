@@ -38,10 +38,15 @@ execute 'colorscheme modus-vivendi'
 require('custom.mappings')
 
 -- plugin settings
-require('custom.plugins.compe')
-require('custom.plugins.fterm')
-require('custom.plugins.lspconfig')
--- require('custom.plugins.neogit')
-require('custom.plugins.nnn')
-require('custom.plugins.telescope')
-require('custom.plugins.treesitter')
+local plugins = { 
+	'compe',
+	'fterm',
+	'lspconfig',
+	'nnn',
+	'telescope',
+	'treesitter',
+}
+for _,plugin in pairs(plugins) do
+	local module = 'custom.plugins.' .. plugin
+	require(module)
+end
