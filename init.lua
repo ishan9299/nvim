@@ -11,6 +11,7 @@ end
 execute "packadd packer.nvim"
 
 require("packer").startup(function()
+	use "LnL7/vim-nix"
 	use "TimUntersberger/neogit"
 	use "godlygeek/tabular"
 	use "hrsh7th/nvim-compe"
