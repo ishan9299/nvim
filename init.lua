@@ -4,14 +4,15 @@ local fn = vim.fn
 local install_path = fn.stdpath("data").."/site/pack/packer/opt/packer.nvim"
 
 if fn.empty(fn.glob(install_path)) > 0 then
-  fn.system({"git", "clone", "https://github.com/wbthomason/packer.nvim", install_path})
-  execute "packadd packer.nvim"
+	fn.system({"git", "clone", "https://github.com/wbthomason/packer.nvim", install_path})
+	execute "packadd packer.nvim"
 end
 
 execute "packadd packer.nvim"
 
 require("packer").startup(function()
 	use "TimUntersberger/neogit"
+	use "godlygeek/tabular"
 	use "hrsh7th/nvim-compe"
 	use "kyazdani42/nvim-web-devicons"
 	use "neovim/nvim-lspconfig"
