@@ -16,6 +16,7 @@ require("packer").startup(function()
 	use "godlygeek/tabular"
 	use "hrsh7th/nvim-compe"
 	use "kyazdani42/nvim-web-devicons"
+	use "mcchrish/nnn.vim"
 	use "neovim/nvim-lspconfig"
 	use "numToStr/FTerm.nvim"
 	use "nvim-lua/plenary.nvim"
