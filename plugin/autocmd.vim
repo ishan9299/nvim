@@ -8,6 +8,7 @@ augroup disable_autocomments
 	autocmd BufNewFile,BufRead *.fish set ft=fish
 	autocmd BufNewFile,BufRead *.zig set ft=zig
 	autocmd BufWinEnter,WinEnter term://* startinsert
+	autocmd BufEnter * if expand("%:p:h") !~ '^/tmp' | silent! lcd %:p:h | endif
 augroup end
 
 augroup vimrc-incsearch-highlight
