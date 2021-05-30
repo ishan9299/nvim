@@ -46,7 +46,7 @@ local plugins = {
 	'telescope',
 	'treesitter',
 }
-for _,plugin in pairs(plugins) do
-	local module = 'custom.plugins.' .. plugin
+for _,v in pairs(plugins) do
+	local module = 'custom.plugins.' .. v
 	require(module)
 end
