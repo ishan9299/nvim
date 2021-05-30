@@ -2,6 +2,10 @@ local g = vim.g
 local opt = vim.opt
 local execute = vim.cmd
 
+if vim.fn.executable('nvr') == 1 then
+	vim.env.GIT_EDITOR = "nvr -cc split --remote-wait +'set bufhidden=wipe'"
+end
+
 g.mapleader = " "
 opt.scrolloff = 5
 opt.lazyredraw = true -- don't redraw screen when using macros
@@ -34,5 +38,6 @@ require('custom.plugins.compe')
 require('custom.plugins.fterm')
 require('custom.plugins.lspconfig')
 -- require('custom.plugins.neogit')
+require('custom.plugins.nnn')
 require('custom.plugins.telescope')
 require('custom.plugins.treesitter')
