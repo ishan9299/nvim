@@ -2,11 +2,11 @@ local g = vim.g
 local opt = vim.opt
 local execute = vim.cmd
 
-if vim.fn.executable('nvr') == 1 then
+if vim.fn.executable("nvr") == 1 then
 	vim.env.GIT_EDITOR = "nvr -cc split --remote-wait +'set bufhidden=wipe'"
 end
 
-g.mapleader = " "
+g.mapleader = ' '
 g.loaded_netrw = 1
 g.loaded_netrwPlugin = 1
 
@@ -32,21 +32,21 @@ opt.textwidth = 120 -- Maximum width of text that is being inserted
 opt.foldenable = false -- no folding
 opt.wrap = false -- dont wrap the lines
 
-execute 'colorscheme modus-vivendi'
+execute "colorscheme modus-vivendi"
 
 -- my mappings
-require('custom.mappings')
+require("custom.mappings")
 
 -- plugin settings
 local plugins = { 
-	'compe',
-	'fterm',
-	'lspconfig',
-	'nnn',
-	'telescope',
-	'treesitter',
+	"compe",
+	"fterm",
+	"lspconfig",
+	"lir",
+	"telescope",
+	"treesitter",
 }
 for _,v in pairs(plugins) do
-	local module = 'custom.plugins.' .. v
+	local module = "custom.plugins." .. v
 	require(module)
 end
