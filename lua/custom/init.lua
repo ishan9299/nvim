@@ -7,12 +7,16 @@ if vim.fn.executable('nvr') == 1 then
 end
 
 g.mapleader = " "
+g.loaded_netrw = 1
+g.loaded_netrwPlugin = 1
+
 opt.scrolloff = 5
 opt.lazyredraw = true -- don't redraw screen when using macros
 opt.hidden = true -- allow us to switch buffers easily
 opt.termguicolors = true -- 24-bit RGB in terminal
 opt.fillchars = { diff = "∙", fold = "·", vert = "│", eob = " " } -- characters used to fill statuslines and seperators
 opt.tabstop = 2 -- 4 spaces equals to one tab
+opt.mouse = 'a'
 opt.shiftwidth = 2 -- number of spaces for each step of autoindent
 opt.undofile = true
 opt.expandtab = false
