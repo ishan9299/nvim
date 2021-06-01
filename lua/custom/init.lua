@@ -41,8 +41,9 @@ require("custom.mappings")
 local plugins = { 
 	"compe",
 	"fterm",
-	"lspconfig",
 	"lir",
+	"lspconfig",
+	"neogit",
 	"telescope",
 	"treesitter",
 }
