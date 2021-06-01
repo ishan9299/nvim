@@ -32,7 +32,7 @@ opt.textwidth = 120 -- Maximum width of text that is being inserted
 opt.foldenable = false -- no folding
 opt.wrap = false -- dont wrap the lines
 
-execute "colorscheme modus-vivendi"
+execute "colorscheme modus-operandi"
 
 -- my mappings
 require("custom.mappings")
