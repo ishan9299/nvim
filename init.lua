@@ -15,7 +15,7 @@ require("packer").startup(function()
 	use "TimUntersberger/neogit"
 	use "godlygeek/tabular"
 	use "hrsh7th/nvim-compe"
-	use "kyazdani42/nvim-web-devicons"
+	-- use "kyazdani42/nvim-web-devicons"
 	use "neovim/nvim-lspconfig"
 	use "numToStr/FTerm.nvim"
 	use "nvim-lua/plenary.nvim"
