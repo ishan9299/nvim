@@ -6,6 +6,13 @@ if vim.fn.executable("nvr") == 1 then
 	vim.env.GIT_EDITOR = "nvr -cc split --remote-wait +'set bufhidden=wipe'"
 end
 
+execute [[
+augroup highlight_yank
+    autocmd!
+    au TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=200}
+augroup END
+]]
+
 g.mapleader = ' '
 g.loaded_netrw = 1
 g.loaded_netrwPlugin = 1
@@ -21,6 +28,7 @@ opt.shiftwidth = 2 -- number of spaces for each step of autoindent
 opt.undofile = true
 opt.expandtab = false
 opt.updatetime = 100
+opt.inccommand = 'nosplit'
 opt.timeoutlen = 500
 opt.listchars = { tab = "»·", nbsp = "+", trail = "·", extends = "→", precedes = "←", eol = "¬" }
 opt.completeopt = { "menuone", "noselect" }
