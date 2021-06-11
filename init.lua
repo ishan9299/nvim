@@ -22,6 +22,7 @@ require("packer").startup(function()
 	use "nvim-telescope/telescope.nvim"
 	use "nvim-treesitter/nvim-treesitter"
 	use "nvim-treesitter/playground"
+	use "steelsojka/pears.nvim"
 	use "tamago324/lir.nvim"
 	use "tikhomirov/vim-glsl"
 	use "tpope/vim-commentary"
