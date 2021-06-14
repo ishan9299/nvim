@@ -17,6 +17,7 @@ g.mapleader = ' '
 g.loaded_netrw = 1
 g.loaded_netrwPlugin = 1
 
+opt.background = 'dark'
 opt.completeopt = { "menuone", "noselect" }
 opt.expandtab = false
 opt.expandtab = false
@@ -42,7 +43,7 @@ opt.undofile = true
 opt.updatetime = 100
 opt.wrap = false -- dont wrap the lines
 
-execute "colorscheme modus-operandi"
+execute "colorscheme solarized-high"
 
 -- my mappings
 require("custom.mappings")
