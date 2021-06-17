@@ -43,7 +43,7 @@ opt.undofile = true
 opt.updatetime = 100
 opt.wrap = false -- dont wrap the lines
 
-execute "colorscheme solarized-high"
+execute "colorscheme modus-vivendi"
 
 -- my mappings
 require("custom.mappings")
@@ -53,7 +53,6 @@ local plugins = {
 	"compe",
 	"fterm",
 	"lir",
-	"lspconfig",
 	"neogit",
 	"pears",
 	"telescope",
