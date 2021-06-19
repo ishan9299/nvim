@@ -13,6 +13,7 @@ execute "packadd packer.nvim"
 require("packer").startup(function()
 	use "LnL7/vim-nix"
 	use "TimUntersberger/neogit"
+	use "glepnir/zephyr-nvim"
 	use "godlygeek/tabular"
 	use "hrsh7th/nvim-compe"
 	use "numToStr/FTerm.nvim"
