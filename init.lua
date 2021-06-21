@@ -15,7 +15,6 @@ require("packer").startup(function()
 	use "TimUntersberger/neogit"
 	use "glepnir/zephyr-nvim"
 	use "godlygeek/tabular"
-	use "hrsh7th/nvim-compe"
 	use "numToStr/FTerm.nvim"
 	use "nvim-lua/plenary.nvim"
 	use "nvim-lua/popup.nvim"
