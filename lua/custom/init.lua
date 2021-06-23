@@ -38,13 +38,12 @@ opt.tabstop = 2 -- 2 spaces equals to one tab
 opt.tabstop = 2 -- 4 spaces equals to one tab
 opt.termguicolors = true -- 24-bit RGB in terminal
 opt.textwidth = 120 -- Maximum width of text that is being inserted
-opt.timeoutlen = 500
 opt.undofile = true
 opt.updatetime = 100
 opt.wrap = false -- dont wrap the lines
 
 g.solarized_statusline = 'flat'
-execute "colorscheme solarized-high"
+execute "colorscheme modus-operandi"
 
 -- my mappings
 require("custom.mappings")
@@ -53,7 +52,6 @@ require("custom.mappings")
 local plugins = {
 	"fterm",
 	"lir",
-	"neogit",
 	"pears",
 	"telescope",
 	"treesitter",

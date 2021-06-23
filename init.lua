@@ -1,5 +1,6 @@
 local execute = vim.cmd
 local fn = vim.fn
+local g = vim.g
 
 local install_path = fn.stdpath("data").."/site/pack/packer/opt/packer.nvim"
 
@@ -12,7 +13,7 @@ execute "packadd packer.nvim"
 
 require("packer").startup(function()
 	use "LnL7/vim-nix"
-	use "TimUntersberger/neogit"
+	use "embark-theme/vim"
 	use "glepnir/zephyr-nvim"
 	use "godlygeek/tabular"
 	use "numToStr/FTerm.nvim"
