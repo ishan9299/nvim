@@ -39,8 +39,9 @@ opt.tabstop = 2 -- 4 spaces equals to one tab
 opt.termguicolors = true -- 24-bit RGB in terminal
 opt.textwidth = 120 -- Maximum width of text that is being inserted
 opt.undofile = true
-opt.updatetime = 100
+opt.updatetime = 1000
 opt.wrap = false -- dont wrap the lines
+opt.cmdheight = 1
 
 g.solarized_statusline = 'flat'
 execute "colorscheme modus-operandi"
