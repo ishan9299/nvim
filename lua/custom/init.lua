@@ -1,6 +1,6 @@
+local execute = vim.cmd
 local g = vim.g
 local opt = vim.opt
-local execute = vim.cmd
 
 if vim.fn.executable("nvr") == 1 then
 	vim.env.GIT_EDITOR = "nvr -cc split --remote-wait +'set bufhidden=wipe'"
@@ -16,6 +16,11 @@ augroup END
 g.mapleader = ' '
 g.loaded_netrw = 1
 g.loaded_netrwPlugin = 1
+
+-- neovide
+g.neovide_fullscreen = true
+g.neovide_cursor_animation_length = 0.10
+g.neovide_cursor_trail_length=0.8
 
 opt.background = 'light'
 opt.completeopt = { "menuone", "noselect" }
@@ -39,12 +44,14 @@ opt.tabstop = 2 -- 4 spaces equals to one tab
 opt.termguicolors = true -- 24-bit RGB in terminal
 opt.textwidth = 120 -- Maximum width of text that is being inserted
 opt.undofile = true
-opt.updatetime = 1000
+opt.updatetime = 250
 opt.wrap = false -- dont wrap the lines
 opt.cmdheight = 1
+opt.guifont = "VictorMono Nerd Font:h18"
+
 
 g.solarized_statusline = 'flat'
-execute "colorscheme modus-operandi"
+execute "colorscheme modus-vivendi"
 
 -- my mappings
 require("custom.mappings")
