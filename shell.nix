@@ -8,6 +8,8 @@ stdenv.mkDerivation {
     gnumake
     lua
     sumneko-lua-language-server
+    luajitPackages.luacheck
+    luaformatter
     nodejs
   ];
 }
