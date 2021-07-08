@@ -44,7 +44,7 @@ opt.tabstop = 2 -- 4 spaces equals to one tab
 opt.termguicolors = true -- 24-bit RGB in terminal
 opt.textwidth = 120 -- Maximum width of text that is being inserted
 opt.undofile = true
-opt.updatetime = 500
+opt.updatetime = 1000
 opt.wrap = false -- dont wrap the lines
 opt.cmdheight = 1
 opt.guifont = "VictorMono Nerd Font:h18"
@@ -61,7 +61,6 @@ local plugins = {
 	"fterm",
 	"lir",
 	"pears",
-	"telescope",
 	"treesitter",
 }
 for _,v in pairs(plugins) do
