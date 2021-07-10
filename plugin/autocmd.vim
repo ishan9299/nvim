@@ -9,6 +9,7 @@ augroup disable_autocomments
 	autocmd BufNewFile,BufRead *.zig set ft=zig
 	autocmd BufWinEnter,WinEnter term://* startinsert
 	autocmd BufEnter * if expand("%:p:h") !~ '^/tmp' | silent! lcd %:p:h | endif
+	au TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=200}
 augroup end
 
 augroup vimrc-incsearch-highlight
@@ -24,7 +25,3 @@ function! <SID>SynStack()
 	endif
 	echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
-
-" Move VISUAL LINE selection within buffer.
-xnoremap K :move '<-2<CR>gv=gv
-xnoremap J :move '>+1<CR>gv=gv

@@ -16,11 +16,9 @@ require("packer").startup(function()
 	use "embark-theme/vim"
 	use "glepnir/zephyr-nvim"
 	use "godlygeek/tabular"
-	use "numToStr/FTerm.nvim"
 	use "nvim-treesitter/nvim-treesitter"
 	use "nvim-treesitter/playground"
 	use "steelsojka/pears.nvim"
-	use "tamago324/lir.nvim"
 	use "tikhomirov/vim-glsl"
 	use "tpope/vim-commentary"
 	use "tpope/vim-repeat"
@@ -30,5 +28,3 @@ end)
 
 execute("packadd! modus-theme-vim")
 execute("packadd! nvim-solarized-lua")
-
-require("custom")
