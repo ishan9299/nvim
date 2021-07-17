@@ -3,6 +3,9 @@ let g:mapleader="\<Space>"
 
 " settings
 set tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab " use tabs as indentation
+set guifont="Consolas:h14"
+set completeopt+=menuone
+set completeopt+=noinsert
 
 " adding the colorscheme
 packadd! modus-theme-vim
