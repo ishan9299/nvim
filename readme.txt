@@ -1,1 +1,1 @@
-neovim config
+minimal nvim config
